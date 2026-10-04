@@ -59,11 +59,12 @@
       
       <h1>Cookiebeleid</h1>
       <p class="text-muted mt-2">Dit document is een ontwerp. Informatie tussen haakjes is nog niet ingevuld: ze moet worden aangevuld en gevalideerd voor publicatie.</p>
-      <h2 class="mt-2">Geen trackingcookies</h2>
-      <p class="mt-2">Deze site gebruikt momenteel geen trackingcookies en geen advertentietrackers. Een toestemmingsbanner is daarom momenteel niet nodig.</p>
-      <p class="mt-2">Mocht dit veranderen (bijvoorbeeld door een analysetool toe te voegen), dan wordt deze pagina bijgewerkt en een toestemmingsbanner toegevoegd indien wettelijk vereist.</p>
+      <h2 class="mt-2">Calendly-widget</h2>
+      <p class="mt-2">Deze site toont op elke pagina een afsprakenknop van <strong>Calendly</strong>. Deze widget laadt een externe script (assets.calendly.com) dat mogelijk zijn eigen cookies plaatst, los van deze site, voor zijn eigen werking en analyse. [AAN TE VULLEN: nagaan bij Calendly of voorafgaande toestemming vereist is voor het laden van de widget in de EU, en een toestemmingsbanner toevoegen indien nodig — momenteel nog niet aanwezig.]</p>
+      <h2 class="mt-2">Geen andere tracker</h2>
+      <p class="mt-2">Buiten de Calendly-widget gebruikt deze site geen eigen trackingcookies, geen advertentietrackers en geen analysetool.</p>
       <h2 class="mt-2">Lokale opslag in de browser</h2>
-      <p class="mt-2">Deze site slaat geen gegevens op in uw browser (geen localStorage, geen cookies).</p>
+      <p class="mt-2">Deze site zelf slaat geen gegevens op in uw browser (geen localStorage, geen cookie rechtstreeks geplaatst door talox.be).</p>
       <h2 class="mt-2">Contact</h2>
       <p class="mt-2"><a href="mailto:contact@talox.be">contact@talox.be</a></p>
     </div>
@@ -98,5 +99,10 @@
     </div>
   </div>
 </footer>
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/contact-talox/30min?background_color=0b0a10&text_color=ffffff&primary_color=7c3aed', text: 'Schedule a meeting with us', color: '#7c3aed', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly badge widget end -->
 </body>
 </html>

@@ -59,11 +59,12 @@
       
       <h1>Politique de cookies</h1>
       <p class="text-muted mt-2">Ce document est un brouillon de base. Les informations entre crochets ne sont pas encore renseignées : elles doivent être complétées et validées avant publication.</p>
-      <h2 class="mt-2">Aucun cookie de suivi</h2>
-      <p class="mt-2">Ce site n'utilise actuellement aucun cookie de suivi ni traceur publicitaire. Aucune bannière de consentement n'est donc nécessaire pour le moment.</p>
-      <p class="mt-2">Si cela change (ajout d'un outil d'analyse d'audience par exemple), cette page sera mise à jour et un bandeau de consentement sera ajouté si requis par la réglementation.</p>
+      <h2 class="mt-2">Widget Calendly</h2>
+      <p class="mt-2">Ce site affiche un bouton de prise de rendez-vous fourni par <strong>Calendly</strong>, présent sur toutes les pages. Ce widget charge un script tiers (assets.calendly.com) qui peut déposer ses propres cookies, indépendamment de ce site, pour son fonctionnement et sa propre mesure d'audience. [À COMPLÉTER : vérifier auprès de Calendly si un consentement préalable est requis avant chargement du widget dans l'UE, et ajouter un bandeau de consentement si oui — ce n'est pas encore en place.]</p>
+      <h2 class="mt-2">Pas d'autre traceur</h2>
+      <p class="mt-2">En dehors du widget Calendly, ce site n'utilise aucun cookie de suivi ni traceur publicitaire propre, et aucun outil d'analyse d'audience.</p>
       <h2 class="mt-2">Stockage local du navigateur</h2>
-      <p class="mt-2">Ce site ne stocke aucune donnée dans votre navigateur (pas de localStorage, pas de cookie).</p>
+      <p class="mt-2">Ce site lui-même ne stocke aucune donnée dans votre navigateur (pas de localStorage, pas de cookie posé directement par talox.be).</p>
       <h2 class="mt-2">Contact</h2>
       <p class="mt-2"><a href="mailto:contact@talox.be">contact@talox.be</a></p>
     </div>
@@ -98,5 +99,10 @@
     </div>
   </div>
 </footer>
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/contact-talox/30min?background_color=0b0a10&text_color=ffffff&primary_color=7c3aed', text: 'Schedule a meeting with us', color: '#7c3aed', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly badge widget end -->
 </body>
 </html>
