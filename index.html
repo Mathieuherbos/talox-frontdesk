@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 fill=%27%230b0a10%27/%3E%3Crect x=%2722%27 y=%2722%27 width=%2756%27 height=%2756%27 fill=%27%237c3aed%27/%3E%3C/svg%3E">
+<title>TALOX — Répondeurs vocaux IA, chatbots et automatisations pour entreprises</title>
+<meta name="description" content="TALOX déploie des agents IA (répondeurs vocaux, chatbots, automatisations sur-mesure) qui répondent, qualifient et agissent pour votre entreprise, 24h/24.">
+<link rel="canonical" href="https://talox.be/">
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="TALOX — Répondeurs vocaux IA, chatbots et automatisations pour entreprises">
+<meta property="og:description" content="TALOX déploie des agents IA (répondeurs vocaux, chatbots, automatisations sur-mesure) qui répondent, qualifient et agissent pour votre entreprise, 24h/24.">
+<meta property="og:url" content="https://talox.be/">
+<meta property="og:image" content="https://talox.be/images/og-talox.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://talox.be/images/og-talox.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/demo-chat.js" defer></script>
+<script src="js/main.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"TALOX","url":"https://talox.be/","description":"Agence belge d'automatisation IA : répondeurs vocaux, chatbots et développements sur-mesure.","areaServed":["BE","FR"],"address":{"@type":"PostalAddress","addressLocality":"Bruxelles","addressCountry":"BE"},"priceRange":"€€"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Mes données sont-elles conformes au RGPD ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les données sont hébergées en Europe et traitées conformément au RGPD, avec un accès restreint à votre équipe et à TALOX."}},{"@type":"Question","name":"Est-ce que ça remplace mon équipe ?","acceptedAnswer":{"@type":"Answer","text":"Non, l'objectif est de compléter votre équipe sur les créneaux et volumes qu'elle ne peut pas couvrir seule, pas de la remplacer."}},{"@type":"Question","name":"Combien de temps avant la mise en place ?","acceptedAnswer":{"@type":"Answer","text":"Comptez quelques semaines entre l'audit initial et la mise en production, selon la complexité du projet."}},{"@type":"Question","name":"Est-ce que ça fonctionne pour mon secteur ?","acceptedAnswer":{"@type":"Answer","text":"Nos solutions s'adaptent à la plupart des secteurs. Consultez nos pages dédiées ou contactez-nous pour un avis rapide sur votre cas."}},{"@type":"Question","name":"Quel est le prix réel, tout compris ?","acceptedAnswer":{"@type":"Answer","text":"Nos tarifs de départ sont publiés sur la page Tarifs. Le prix final dépend du volume et des intégrations souhaitées."}},{"@type":"Question","name":"Y a-t-il un engagement de durée ?","acceptedAnswer":{"@type":"Answer","text":"Non, nos abonnements sont sans engagement long. Les détails varient selon le service, voir la page Tarifs."}}]}
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="./" class="logo" aria-label="TALOX, accueil"><span class="logo-mark" aria-hidden="true"></span>TALOX</a>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="./" aria-current="page" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#secteurs" aria-haspopup="true" data-i18n="nav.sectors">Secteurs</a>
+          <div class="dropdown">
+            <a href="secteurs/immobilier.html" data-i18n="sectorNames.immobilier">Immobilier</a>
+            <a href="secteurs/sante-bien-etre.html" data-i18n="sectorNames.sante-bien-etre">Santé &amp; bien-être</a>
+            <a href="secteurs/horeca-restauration.html" data-i18n="sectorNames.horeca-restauration">Horeca &amp; restauration</a>
+            <a href="secteurs/services-professionnels.html" data-i18n="sectorNames.services-professionnels">Services professionnels</a>
+            <a href="secteurs/artisans-btp.html" data-i18n="sectorNames.artisans-btp">Artisans &amp; BTP</a>
+            <a href="secteurs/ecommerce-retail.html" data-i18n="sectorNames.ecommerce-retail">E-commerce &amp; retail</a>
+          </div>
+        </li>
+        <li><a href="tarifs.html" data-i18n="nav.pricing">Tarifs</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="lang-switcher" role="group" aria-label="Choix de la langue">
+          <button class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          <button class="lang-btn" data-lang="nl" aria-pressed="false">NL</button>
+        </div>
+        <a href="index.html#contact" class="btn btn-primary btn-sm"><span data-i18n="nav.cta">Démarrer un projet</span></a>
+      </div>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></svg></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-video-wrap" aria-hidden="true">
+      <video autoplay muted loop playsinline preload="none">
+        <source src="https://videos.pexels.com/video-files/7762080/7762080-hd_1920_1080_25fps.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+    <div class="container">
+      <div>
+        <span class="eyebrow"><span data-i18n="hero.tag">Agence IA — Bruxelles, Belgique</span></span>
+        <h1><span data-i18n="hero.t1">Chaque appel manqué,</span> <span class="accent" data-i18n="hero.t2">c'est un client qui va voir ailleurs</span></h1>
+        <p class="hero-subtitle" data-i18n="hero.sub">TALOX déploie des agents IA qui répondent, qualifient et agissent à votre place, jour et nuit — répondeurs vocaux, chatbots et automatisations sur-mesure.</p>
+        <div class="cta-row">
+          <a href="#contact" class="btn btn-primary"><span data-i18n="hero.cta1">Démarrer un projet</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          <a href="#services" class="btn-text"><span data-i18n="hero.cta2">Voir nos services</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+        </div>
+        <ul class="hero-meta">
+          <li><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span data-i18n="hero.meta1">Réponse garantie sous 24h</span></li>
+          <li><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span data-i18n="hero.meta2">Aucun engagement</span></li>
+          <li><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span data-i18n="hero.meta3">Hébergement UE</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" data-demo-chat>
+        <div class="demo-chat-window">
+          <div class="demo-chat-header">
+            <div class="demo-chat-avatar">T</div>
+            <div>
+              <div class="demo-chat-title" data-i18n="demoTitle">Assistant TALOX</div>
+              <div class="demo-chat-status" data-i18n="demoStatus">En ligne</div>
+            </div>
+          </div>
+          <div class="demo-chat-body" data-demo-body></div>
+          <div class="demo-chat-footer">
+            <span data-i18n="demoNote">Démo simulée — exemple réel sur demande</span>
+            <button class="demo-replay" data-demo-replay type="button"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M240,56v48a8,8,0,0,1-8,8H184a8,8,0,0,1,0-16H211.4L184.81,71.64l-.25-.24a80,80,0,1,0-1.67,114.78,8,8,0,0,1,11,11.63A95.44,95.44,0,0,1,128,224h-1.32A96,96,0,1,1,195.75,60L224,85.8V56a8,8,0,1,1,16,0Z"/></svg><span data-i18n="demoReplay">Rejouer</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULATEUR ROI -->
+  <section id="calculateur">
+    <div class="container">
+      <div class="section-intro centered">
+        <span class="eyebrow" data-i18n="calc.eyebrow">Simulation</span>
+        <h2 data-i18n="calc.title">Combien vous coûtent vos contacts manqués ?</h2>
+        <p data-i18n="calc.sub">Un client qui appelle ou écrit sans réponse ne rappelle pas toujours. Estimez la perte potentielle pour votre activité.</p>
+      </div>
+      <div class="card" style="max-width:760px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center; padding:2.5rem;" data-calculator>
+        <div>
+          <div style="margin-bottom:1.4rem;">
+            <label style="display:flex; justify-content:space-between; gap:1rem; font-family:var(--font-display); font-weight:600; font-size:0.88rem; margin-bottom:0.6rem; color:var(--text-light);" for="calc-missed"><span data-i18n="calc.missedLabel">Contacts ratés par semaine (appels, messages)</span> <output for="calc-missed" data-missed-output style="color:var(--violet-light);">8</output></label>
+            <input type="range" id="calc-missed" min="1" max="40" value="8" data-missed style="width:100%; accent-color:var(--violet);">
+          </div>
+          <div>
+            <label style="display:flex; justify-content:space-between; gap:1rem; font-family:var(--font-display); font-weight:600; font-size:0.88rem; margin-bottom:0.6rem; color:var(--text-light);" for="calc-value"><span data-i18n="calc.valueLabel">Valeur moyenne d'un client</span> <output for="calc-value" data-value-output style="color:var(--violet-light);">80 €</output></label>
+            <input type="range" id="calc-value" min="20" max="500" step="10" value="80" data-value style="width:100%; accent-color:var(--violet);">
+          </div>
+        </div>
+        <div style="border-left:1px solid var(--border); padding-left:2rem;">
+          <div class="eyebrow" data-i18n="calc.resultLabel">Perte mensuelle estimée</div>
+          <div style="font-family:var(--font-display); font-size:clamp(2rem,5vw,2.75rem); font-weight:700; color:var(--text-white); margin-bottom:0.4rem;" data-result-value>0 €</div>
+          <div style="font-size:0.9rem; color:var(--text-light);" data-result-compare></div>
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.8rem;" data-i18n="calc.disclaimer">Estimation indicative à but illustratif, basée sur vos propres chiffres.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCÉNARIOS DE DOULEUR -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-intro">
+        <span class="eyebrow" data-i18n="pain.eyebrow">Le quotidien sans TALOX</span>
+        <h2 data-i18n="pain.title">Ces moments où votre entreprise ne répond pas</h2>
+      </div>
+      <div class="pain-row">
+        <div class="pain-card">
+          <span class="pain-time" data-i18n="pain.p1t">18h47</span>
+          <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M168,112a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,112Zm-8,24H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm72-8A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"/></svg></div>
+          <h3 data-i18n="pain.p1">Un client relance sur WhatsApp</h3>
+          <p data-i18n="pain.p1d">Personne ne répond avant demain matin. Il a peut-être déjà écrit ailleurs.</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-time" data-i18n="pain.p2t">22h30</span>
+          <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg></div>
+          <h3 data-i18n="pain.p2">Un appel manqué en soirée</h3>
+          <p data-i18n="pain.p2d">C'est un rendez-vous, parfois une vente, perdu au profit d'un concurrent joignable.</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-time" data-i18n="pain.p3t">08h15</span>
+          <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-38.34-85.66a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35A8,8,0,0,1,169.66,122.34Z"/></svg></div>
+          <h3 data-i18n="pain.p3">Le standard sature le lundi matin</h3>
+          <p data-i18n="pain.p3d">Toute l'équipe est en réunion, les appels s'accumulent sans être pris en charge.</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-time" data-i18n="pain.p4t">Chaque semaine</span>
+          <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M240,56v48a8,8,0,0,1-8,8H184a8,8,0,0,1,0-16H211.4L184.81,71.64l-.25-.24a80,80,0,1,0-1.67,114.78,8,8,0,0,1,11,11.63A95.44,95.44,0,0,1,128,224h-1.32A96,96,0,1,1,195.75,60L224,85.8V56a8,8,0,1,1,16,0Z"/></svg></div>
+          <h3 data-i18n="pain.p4">La même tâche refaite à la main</h3>
+          <p data-i18n="pain.p4d">Un process de facturation ou de relance encore géré manuellement, chaque semaine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVANTAGES : 1 mis en avant + 2 empilés -->
+  <section>
+    <div class="container">
+      <div class="section-intro">
+        <span class="eyebrow" data-i18n="adv.eyebrow">Pourquoi TALOX</span>
+        <h2 data-i18n="adv.title">Plus aucun contact ignoré</h2>
+      </div>
+      <div class="adv-grid">
+        <div class="card">
+          <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></svg></div>
+          <h3 data-i18n="adv.a1t">Disponible 24/7</h3>
+          <p data-i18n="adv.a1d">Vos agents IA répondent le soir, le week-end et pendant les pics d'activité, sans jamais être débordés.</p>
+        </div>
+        <div class="adv-stack">
+          <div class="card">
+            <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"/></svg></div>
+            <h3 data-i18n="adv.a2t">Moins cher qu'une embauche</h3>
+            <p data-i18n="adv.a2d">Un abonnement mensuel prévisible, sans charges sociales ni période de formation.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"/></svg></div>
+            <h3 data-i18n="adv.a3t">Déployé en quelques semaines</h3>
+            <p data-i18n="adv.a3d">Pas de développement interne à porter : audit, configuration puis mise en production rapide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES : zig-zag -->
+  <section id="services" class="section-alt">
+    <div class="container">
+      <div class="section-intro">
+        <span class="eyebrow" data-i18n="svc.eyebrow">Nos services</span>
+        <h2 data-i18n="svc.title">Trois façons de ne plus rater un client</h2>
+      </div>
+      <div>
+        <div class="service-row">
+          <div class="service-visual"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg></div>
+          <div>
+            <span class="service-number">01</span>
+            <h3 data-i18n="svc.s1t">Répondeurs IA vocaux</h3>
+            <p data-i18n="svc.s1d">Des agents vocaux intelligents qui répondent à vos appels entrants 24h/24, qualifient vos leads et prennent des rendez-vous, sans jamais rater un appel.</p>
+            <div class="card-tags"><span class="tag" data-i18n="svc.s1tag1">Disponible 24/7</span><span class="tag" data-i18n="svc.s1tag2">Multilingue</span><span class="tag" data-i18n="svc.s1tag3">CRM intégré</span></div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="service-visual"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M168,112a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,112Zm-8,24H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm72-8A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"/></svg></div>
+          <div>
+            <span class="service-number">02</span>
+            <h3 data-i18n="svc.s2t">Chatbots &amp; réponses automatiques</h3>
+            <p data-i18n="svc.s2d">Des chatbots entraînés sur votre activité qui répondent instantanément à vos clients par email, WhatsApp ou sur votre site, et escaladent intelligemment les cas complexes.</p>
+            <div class="card-tags"><span class="tag" data-i18n="svc.s2tag1">Site web</span><span class="tag" data-i18n="svc.s2tag2">WhatsApp</span><span class="tag" data-i18n="svc.s2tag3">Email</span></div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="service-visual"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M245.66,74.34l-32-32a8,8,0,0,0-11.32,11.32L220.69,72H208c-49.33,0-61.05,28.12-71.38,52.92-9.38,22.51-16.92,40.59-49.48,42.84a40,40,0,1,0,.1,16c43.26-2.65,54.34-29.15,64.14-52.69C161.41,107,169.33,88,208,88h12.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,74.34ZM48,200a24,24,0,1,1,24-24A24,24,0,0,1,48,200Z"/></svg></div>
+          <div>
+            <span class="service-number">03</span>
+            <h3 data-i18n="svc.s3t">Développements sur mesure</h3>
+            <p data-i18n="svc.s3d">Chaque entreprise a ses propres flux. Nous concevons des automatisations IA entièrement personnalisées pour vos processus spécifiques, de l'idée au déploiement.</p>
+            <div class="card-tags"><span class="tag" data-i18n="svc.s3tag1">Analyse de besoin</span><span class="tag" data-i18n="svc.s3tag2">Intégrations API</span><span class="tag" data-i18n="svc.s3tag3">Formation incluse</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSIGNES -->
+  <section>
+    <div class="container">
+      <div class="section-intro">
+        <span class="eyebrow" data-i18n="cons.eyebrow">Sur-mesure</span>
+        <h2 data-i18n="cons.title">Vos consignes, appliquées à la lettre</h2>
+        <p data-i18n="cons.sub">Vous gardez le contrôle : chaque agent applique vos règles précises, propres à votre activité.</p>
+      </div>
+      <div class="consigne-grid">
+        <div class="card consigne-card"><div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg></div><div><h3 data-i18n="cons.c1t">Un client demande un devis un dimanche</h3><p class="consigne-quote" data-i18n="cons.c1q">Le chatbot répond et programme un rappel lundi 9h.</p></div></div>
+        <div class="card consigne-card"><div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg></div><div><h3 data-i18n="cons.c2t">Un appelant demande un prix par téléphone</h3><p class="consigne-quote" data-i18n="cons.c2q">L'agent vocal donne la grille tarifaire standard, jamais de remise à l'oral.</p></div></div>
+        <div class="card consigne-card"><div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg></div><div><h3 data-i18n="cons.c3t">Un message urgent arrive hors horaires</h3><p class="consigne-quote" data-i18n="cons.c3q">Transfert immédiat vers votre GSM, avec résumé du message par SMS.</p></div></div>
+        <div class="card consigne-card"><div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg></div><div><h3 data-i18n="cons.c4t">Un dossier revient trois fois sans réponse</h3><p class="consigne-quote" data-i18n="cons.c4q">L'automatisation relance automatiquement le bon interlocuteur en interne.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMENT ÇA MARCHE -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-intro">
+        <span class="eyebrow" data-i18n="how.eyebrow">Mise en place</span>
+        <h2 data-i18n="how.title">Trois étapes, quelques semaines</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-index">01</span><h3 data-i18n="how.s1t">Audit rapide</h3><p data-i18n="how.s1d">On identifie avec vous où les contacts et le temps se perdent, et le service le plus rentable à automatiser en premier.</p></div>
+        <div class="step"><span class="step-index">02</span><h3 data-i18n="how.s2t">Configuration</h3><p data-i18n="how.s2d">Vos consignes, votre ton, vos outils (agenda, CRM, caisse...) sont intégrés à l'agent IA.</p></div>
+        <div class="step"><span class="step-index">03</span><h3 data-i18n="how.s3t">Mise en prod</h3><p data-i18n="how.s3d">L'agent est testé puis activé progressivement, avec un suivi des premières semaines.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CE QU'ON REMPLACE -->
+  <section>
+    <div class="container">
+      <div class="section-intro">
+        <span class="eyebrow" data-i18n="rep.eyebrow">Avant / après</span>
+        <h2 data-i18n="rep.title">Ce qu'on remplace, concrètement</h2>
+      </div>
+      <div class="compare-list">
+        <div class="compare-row"><span class="before" data-i18n="rep.b1">Répondeur classique qui prend un message</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg><span class="after" data-i18n="rep.a1">Agent qui répond, qualifie et agit</span></div>
+        <div class="compare-row"><span class="before" data-i18n="rep.b2">Secrétariat externalisé, horaires limités</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg><span class="after" data-i18n="rep.a2">IA disponible 24h/24, tous les jours</span></div>
+        <div class="compare-row"><span class="before" data-i18n="rep.b3">Relances et suivis faits à la main</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg><span class="after" data-i18n="rep.a3">Automatisation qui déclenche les bonnes actions</span></div>
+        <div class="compare-row"><span class="before" data-i18n="rep.b4">Appels manqués le soir et le week-end</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg><span class="after" data-i18n="rep.a4">Prise en charge continue, sans interruption</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING RÉSUMÉ (3 services différents, pas 3 tiers du même produit) -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-intro">
+        <span class="eyebrow" data-i18n="price.eyebrow">Tarifs</span>
+        <h2 data-i18n="price.title">Des prix clairs, affichés dès maintenant</h2>
+        <p data-i18n="price.sub">Pas de simulateur à remplir : voici nos tarifs de départ pour chaque service.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card pricing-card">
+          <h3 data-i18n="price.p1t">Répondeurs IA vocaux</h3>
+          <p class="price-from" data-i18n="price.p1from">À partir de</p>
+          <p class="price-value" data-i18n="price.p1v">149 €</p><p class="text-muted" data-i18n="price.p1d">Ligne unique, FR/NL, prise de RDV, résumés d'appels par email/SMS.</p>
+          <a href="tarifs.html" class="btn-text mt-2"><span data-i18n="cta.details">Voir le détail</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+        </div>
+        <div class="card pricing-card featured">
+          <span class="pricing-badge" data-i18n="price.badge">Le plus choisi</span>
+          <h3 data-i18n="price.p2t">Chatbots &amp; réponses auto</h3>
+          <p class="price-from" data-i18n="price.p2from">À partir de</p>
+          <p class="price-value"><span data-i18n="price.p2v">1 200 €</span> <small data-i18n="price.p2u">+ 150 €/mois</small></p><p class="text-muted" data-i18n="price.p2d">Mise en place puis maintenance et hébergement, sur email, WhatsApp et site web.</p>
+          <a href="tarifs.html" class="btn btn-primary btn-block mt-2"><span data-i18n="cta.details">Voir le détail</span></a>
+        </div>
+        <div class="card pricing-card">
+          <h3 data-i18n="price.p3t">Développements sur mesure</h3>
+          <p class="price-from" data-i18n="price.p3from">À partir de</p>
+          <p class="price-value"><span data-i18n="price.p3v">1 800 €</span> <small data-i18n="price.p3u">/automatisation</small></p><p class="text-muted" data-i18n="price.p3d">Workflows n8n, intégrations CRM/ERP. Projets complexes sur devis.</p>
+          <a href="tarifs.html" class="btn-text mt-2"><span data-i18n="cta.details">Voir le détail</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-intro">
+        <span class="eyebrow" data-i18n="faq.eyebrow">Questions fréquentes</span>
+        <h2 data-i18n="faq.title">Avant de vous lancer</h2>
+      </div>
+      <div class="faq-list" style="max-width:760px;">
+        <details class="faq-item">
+          <summary class="faq-question"><span data-i18n="faq.q1">Mes données sont-elles conformes au RGPD ?</span><span class="faq-toggle-icon"><svg class="icon icon-plus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg><svg class="icon icon-minus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></svg></span></summary>
+          <p class="faq-answer" data-i18n="faq.a1">Oui. Les données sont hébergées en Europe et traitées conformément au RGPD, avec un accès restreint à votre équipe et à TALOX.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question"><span data-i18n="faq.q2">Est-ce que ça remplace mon équipe ?</span><span class="faq-toggle-icon"><svg class="icon icon-plus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg><svg class="icon icon-minus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></svg></span></summary>
+          <p class="faq-answer" data-i18n="faq.a2">Non, l'objectif est de compléter votre équipe sur les créneaux et volumes qu'elle ne peut pas couvrir seule, pas de la remplacer.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question"><span data-i18n="faq.q3">Combien de temps avant la mise en place ?</span><span class="faq-toggle-icon"><svg class="icon icon-plus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg><svg class="icon icon-minus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></svg></span></summary>
+          <p class="faq-answer" data-i18n="faq.a3">Comptez quelques semaines entre l'audit initial et la mise en production, selon la complexité du projet.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question"><span data-i18n="faq.q4">Est-ce que ça fonctionne pour mon secteur ?</span><span class="faq-toggle-icon"><svg class="icon icon-plus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg><svg class="icon icon-minus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></svg></span></summary>
+          <p class="faq-answer" data-i18n="faq.a4">Nos solutions s'adaptent à la plupart des secteurs. Consultez nos pages dédiées ou contactez-nous pour un avis rapide sur votre cas.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question"><span data-i18n="faq.q5">Quel est le prix réel, tout compris ?</span><span class="faq-toggle-icon"><svg class="icon icon-plus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg><svg class="icon icon-minus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></svg></span></summary>
+          <p class="faq-answer" data-i18n="faq.a5">Nos tarifs de départ sont publiés sur la page Tarifs. Le prix final dépend du volume et des intégrations souhaitées.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question"><span data-i18n="faq.q6">Y a-t-il un engagement de durée ?</span><span class="faq-toggle-icon"><svg class="icon icon-plus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg><svg class="icon icon-minus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></svg></span></summary>
+          <p class="faq-answer" data-i18n="faq.a6">Non, nos abonnements sont sans engagement long. Les détails varient selon le service, voir la page Tarifs.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + CONTACT -->
+  <section id="contact" class="section-alt contact-section">
+    <div class="container">
+      <div>
+        <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+        <h2 data-i18n="contact.title">Parlons de votre projet</h2>
+        <p class="text-muted mt-2" data-i18n="contact.sub">Décrivez votre besoin, on revient vers vous sous 24h avec une première piste concrète.</p>
+        <ul class="hero-meta mt-2">
+          <li><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span data-i18n="hero.meta1">Réponse garantie sous 24h</span></li>
+          <li><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span data-i18n="hero.meta2">Aucun engagement</span></li>
+        </ul>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/xqegploo" method="POST" novalidate>
+        <div class="form-success" role="status" tabindex="-1" data-i18n="form.success">Message envoyé ! Nous vous répondrons sous 24 heures.</div>
+        <div class="form-row">
+          <div class="field"><label for="prenom" data-i18n="form.firstNameReq">Prénom *</label><input type="text" id="prenom" name="prenom" required autocomplete="given-name" data-i18n-placeholder="form.firstNamePh" placeholder="Jean"></div>
+          <div class="field"><label for="nom" data-i18n="form.lastNameReq">Nom *</label><input type="text" id="nom" name="nom" required autocomplete="family-name" data-i18n-placeholder="form.lastNamePh" placeholder="Dupont"></div>
+        </div>
+        <div class="field"><label for="email" data-i18n="form.emailReq">Email professionnel *</label><input type="email" id="email" name="email" required autocomplete="email" data-i18n-placeholder="form.emailPh" placeholder="jean@entreprise.be"></div>
+        <div class="field"><label for="entreprise" data-i18n="form.company">Entreprise</label><input type="text" id="entreprise" name="entreprise" autocomplete="organization" data-i18n-placeholder="form.companyPh" placeholder="Nom de votre société"></div>
+        <div class="field"><label for="projet" data-i18n="form.projectReq">Votre projet *</label><textarea id="projet" name="message" rows="4" data-i18n-placeholder="form.projectPh" placeholder="Décrivez votre besoin en quelques lignes..."></textarea></div>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="btn btn-primary btn-block" data-submit-btn><span data-submit-text data-i18n="form.submit">Envoyer ma demande</span></button>
+        <p class="form-note"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span data-i18n="form.note">Réponse garantie sous 24h · Aucun engagement</span></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- SECTEURS -->
+  <section id="secteurs">
+    <div class="container">
+      <div class="section-intro">
+        <span class="eyebrow" data-i18n="sectors.eyebrow">Secteurs</span>
+        <h2 data-i18n="sectors.title">Pensé pour votre métier</h2>
+        <p data-i18n="sectors.sub">Chaque secteur a son vocabulaire, ses outils et ses urgences. Nos agents s'y adaptent.</p>
+      </div>
+      <div class="grid grid-3">
+        <a href="secteurs/immobilier.html" class="sector-card">
+          <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"/></svg></div>
+          <h3 data-i18n="sectorNames.immobilier">Immobilier</h3>
+          <p data-i18n="sectors.d1">Qualification des demandes et prise de rendez-vous de visite.</p>
+          <span class="sector-card-link"><span data-i18n="cta.discover">Découvrir</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span>
+        </a>
+        <a href="secteurs/sante-bien-etre.html" class="sector-card">
+          <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"/></svg></div>
+          <h3 data-i18n="sectorNames.sante-bien-etre">Santé &amp; bien-être</h3>
+          <p data-i18n="sectors.d2">Prise de rendez-vous et orientation des urgences, en toute confidentialité.</p>
+          <span class="sector-card-link"><span data-i18n="cta.discover">Découvrir</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span>
+        </a>
+        <a href="secteurs/horeca-restauration.html" class="sector-card">
+          <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M72,88V40a8,8,0,0,1,16,0V88a8,8,0,0,1-16,0ZM216,40V224a8,8,0,0,1-16,0V176H152a8,8,0,0,1-8-8,268.75,268.75,0,0,1,7.22-56.88c9.78-40.49,28.32-67.63,53.63-78.47A8,8,0,0,1,216,40ZM200,53.9c-32.17,24.57-38.47,84.42-39.7,106.1H200ZM119.89,38.69a8,8,0,1,0-15.78,2.63L112,88.63a32,32,0,0,1-64,0l7.88-47.31a8,8,0,1,0-15.78-2.63l-8,48A8.17,8.17,0,0,0,32,88a48.07,48.07,0,0,0,40,47.32V224a8,8,0,0,0,16,0V135.32A48.07,48.07,0,0,0,128,88a8.17,8.17,0,0,0-.11-1.31Z"/></svg></div>
+          <h3 data-i18n="sectorNames.horeca-restauration">Horeca &amp; restauration</h3>
+          <p data-i18n="sectors.d3">Réservations et commandes à emporter, même en plein coup de feu.</p>
+          <span class="sector-card-link"><span data-i18n="cta.discover">Découvrir</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span>
+        </a>
+        <a href="secteurs/services-professionnels.html" class="sector-card">
+          <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"/></svg></div>
+          <h3 data-i18n="sectorNames.services-professionnels">Services professionnels</h3>
+          <p data-i18n="sectors.d4">Standard géré pour comptables, avocats et consultants.</p>
+          <span class="sector-card-link"><span data-i18n="cta.discover">Découvrir</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span>
+        </a>
+        <a href="secteurs/artisans-btp.html" class="sector-card">
+          <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z"/></svg></div>
+          <h3 data-i18n="sectorNames.artisans-btp">Artisans &amp; BTP</h3>
+          <p data-i18n="sectors.d5">Prise de devis et de rendez-vous chantier sans décrocher sur le terrain.</p>
+          <span class="sector-card-link"><span data-i18n="cta.discover">Découvrir</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span>
+        </a>
+        <a href="secteurs/ecommerce-retail.html" class="sector-card">
+          <div class="card-icon"><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M104,216a16,16,0,1,1-16-16A16,16,0,0,1,104,216Zm88-16a16,16,0,1,0,16,16A16,16,0,0,0,192,200ZM239.71,74.14l-25.64,92.28A24.06,24.06,0,0,1,191,184H92.16A24.06,24.06,0,0,1,69,166.42L33.92,40H16a8,8,0,0,1,0-16H40a8,8,0,0,1,7.71,5.86L57.19,64H232a8,8,0,0,1,7.71,10.14ZM221.47,80H61.64l22.81,82.14A8,8,0,0,0,92.16,168H191a8,8,0,0,0,7.71-5.86Z"/></svg></div>
+          <h3 data-i18n="sectorNames.ecommerce-retail">E-commerce &amp; retail</h3>
+          <p data-i18n="sectors.d6">Suivi de commande et SAV automatisés sur vos canaux habituels.</p>
+          <span class="sector-card-link"><span data-i18n="cta.discover">Découvrir</span><svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="./" class="logo"><span class="logo-mark" aria-hidden="true"></span>TALOX</a>
+        <p data-i18n="footer.tagline">Agence belge d'automatisation IA, basée à Bruxelles.</p>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer.servicesTitle">Services</h3>
+        <ul>
+          <li><a href="index.html#services" data-i18n="services.s1">Répondeurs IA vocaux</a></li>
+          <li><a href="index.html#services" data-i18n="services.s2">Chatbots &amp; réponses auto</a></li>
+          <li><a href="index.html#services" data-i18n="services.s3">Développements sur mesure</a></li>
+          <li><a href="tarifs.html" data-i18n="nav.pricing">Tarifs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer.sectorsTitle">Secteurs</h3>
+        <ul>
+          <li><a href="secteurs/immobilier.html" data-i18n="sectorNames.immobilier">Immobilier</a></li>
+          <li><a href="secteurs/sante-bien-etre.html" data-i18n="sectorNames.sante-bien-etre">Santé &amp; bien-être</a></li>
+          <li><a href="secteurs/horeca-restauration.html" data-i18n="sectorNames.horeca-restauration">Horeca &amp; restauration</a></li>
+          <li><a href="secteurs/services-professionnels.html" data-i18n="sectorNames.services-professionnels">Services professionnels</a></li>
+          <li><a href="secteurs/artisans-btp.html" data-i18n="sectorNames.artisans-btp">Artisans &amp; BTP</a></li>
+          <li><a href="secteurs/ecommerce-retail.html" data-i18n="sectorNames.ecommerce-retail">E-commerce &amp; retail</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> TALOX. <span data-i18n="footer.rights">Tous droits réservés.</span> · <span style="color:var(--text-muted); cursor:default;" aria-disabled="true" title="Bientôt disponible">Politique de confidentialité</span> · <a href="cgu.html">Conditions générales</a></span>
+      <span data-i18n="footer.compliance">RGPD · Hébergement UE</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.TALOX_I18N = {"fr":{"nav":{"home":"Accueil","services":"Services","sectors":"Secteurs","pricing":"Tarifs","contact":"Contact","cta":"Démarrer un projet"},"footer":{"tagline":"Agence belge d'automatisation IA, basée à Bruxelles.","servicesTitle":"Services","sectorsTitle":"Secteurs","contactTitle":"Contact","formLink":"Formulaire de contact","location":"Bruxelles, Belgique","rights":"Tous droits réservés.","compliance":"RGPD · Hébergement UE"},"sectorNames":{"immobilier":"Immobilier","sante-bien-etre":"Santé & bien-être","horeca-restauration":"Horeca & restauration","services-professionnels":"Services professionnels","artisans-btp":"Artisans & BTP","ecommerce-retail":"E-commerce & retail"},"cta":{"start":"Démarrer un projet","ask":"Poser une question","details":"Voir le détail","discover":"Découvrir","allPricing":"Voir tous les tarifs"},"services":{"s1":"Répondeurs IA vocaux","s2":"Chatbots & réponses auto","s3":"Développements sur mesure"},"guarantee":{"gdpr":"RGPD & hébergement UE","noCommit":"Sans engagement long","fast":"Mise en place rapide"},"form":{"firstName":"Prénom","firstNameReq":"Prénom *","firstNamePh":"Jean","lastName":"Nom","lastNameReq":"Nom *","lastNamePh":"Dupont","email":"Email professionnel","emailReq":"Email professionnel *","emailPh":"jean@entreprise.be","company":"Entreprise","companyPh":"Nom de votre société","project":"Votre projet","projectReq":"Votre projet *","projectPh":"Décrivez votre besoin en quelques lignes...","submit":"Envoyer ma demande","sending":"Envoi en cours...","error":"Une erreur est survenue. Réessayez ou écrivez à contact@talox.be","note":"Réponse garantie sous 24h · Aucun engagement","success":"Message envoyé ! Nous vous répondrons sous 24 heures."},"breadcrumbHome":"Accueil","breadcrumbSectors":"Secteurs","demoStatus":"En ligne","howEyebrow":"Adapté à votre métier","howTitle":"Comment ça marche pour vous","usecaseEyebrow":"Cas d'usage","usecaseTitle":"Des exemples concrets","guaranteeEyebrow":"Garanties","guaranteeTitle":"Sans risque pour votre activité","fromLabel":"À partir de","faqEyebrow":"Questions fréquentes","faqTitlePrefix":"Spécifique","hero":{"tag":"Agence IA — Bruxelles, Belgique","t1":"Chaque appel manqué,","t2":"c'est un client qui va voir ailleurs","sub":"TALOX déploie des agents IA qui répondent, qualifient et agissent à votre place, jour et nuit — répondeurs vocaux, chatbots et automatisations sur-mesure.","cta1":"Démarrer un projet","cta2":"Voir nos services","meta1":"Réponse garantie sous 24h","meta2":"Aucun engagement","meta3":"Hébergement UE"},"heroDialog":[{"from":"client","text":"Bonjour, vous faites encore des devis pour une installation ce mois-ci ?"},{"from":"agent","text":"Bonjour 👋 Oui, tout à fait. Je peux prendre vos coordonnées et vous proposer un créneau, ça vous va ?"},{"from":"client","text":"Oui parfait, plutôt en fin de semaine si possible."},{"from":"agent","text":"Je vous propose vendredi 14h ou samedi 10h. Un rappel vous sera envoyé la veille par SMS."},{"from":"client","text":"Va pour vendredi 14h, merci !"},{"from":"agent","text":"C'est noté ✅ Rendez-vous confirmé, l'équipe est prévenue. Bonne journée !"}],"demoNote":"Démo simulée — exemple réel sur demande","demoReplay":"Rejouer","demoTitle":"Assistant TALOX","calc":{"eyebrow":"Simulation","title":"Combien vous coûtent vos contacts manqués ?","sub":"Un client qui appelle ou écrit sans réponse ne rappelle pas toujours. Estimez la perte potentielle pour votre activité.","missedLabel":"Contacts ratés par semaine (appels, messages)","valueLabel":"Valeur moyenne d'un client","resultLabel":"Perte mensuelle estimée","disclaimer":"Estimation indicative à but illustratif, basée sur vos propres chiffres.","compareTemplate":"Soit une perte estimée d'environ {amount} € net après un abonnement Essentiel à partir de 149 €/mois."},"pain":{"eyebrow":"Le quotidien sans TALOX","title":"Ces moments où votre entreprise ne répond pas","p1t":"18h47","p1":"Un client relance sur WhatsApp","p1d":"Personne ne répond avant demain matin. Il a peut-être déjà écrit ailleurs.","p2t":"22h30","p2":"Un appel manqué en soirée","p2d":"C'est un rendez-vous, parfois une vente, perdu au profit d'un concurrent joignable.","p3t":"08h15","p3":"Le standard sature le lundi matin","p3d":"Toute l'équipe est en réunion, les appels s'accumulent sans être pris en charge.","p4t":"Chaque semaine","p4":"La même tâche refaite à la main","p4d":"Un process de facturation ou de relance encore géré manuellement, chaque semaine."},"adv":{"eyebrow":"Pourquoi TALOX","title":"Plus aucun contact ignoré","a1t":"Disponible 24/7","a1d":"Vos agents IA répondent le soir, le week-end et pendant les pics d'activité, sans jamais être débordés.","a2t":"Moins cher qu'une embauche","a2d":"Un abonnement mensuel prévisible, sans charges sociales ni période de formation.","a3t":"Déployé en quelques semaines","a3d":"Pas de développement interne à porter : audit, configuration puis mise en production rapide."},"svc":{"eyebrow":"Nos services","title":"Trois façons de ne plus rater un client","s1t":"Répondeurs IA vocaux","s1d":"Des agents vocaux intelligents qui répondent à vos appels entrants 24h/24, qualifient vos leads et prennent des rendez-vous, sans jamais rater un appel.","s1tag1":"Disponible 24/7","s1tag2":"Multilingue","s1tag3":"CRM intégré","s2t":"Chatbots & réponses automatiques","s2d":"Des chatbots entraînés sur votre activité qui répondent instantanément à vos clients par email, WhatsApp ou sur votre site, et escaladent intelligemment les cas complexes.","s2tag1":"Site web","s2tag2":"WhatsApp","s2tag3":"Email","s3t":"Développements sur mesure","s3d":"Chaque entreprise a ses propres flux. Nous concevons des automatisations IA entièrement personnalisées pour vos processus spécifiques, de l'idée au déploiement.","s3tag1":"Analyse de besoin","s3tag2":"Intégrations API","s3tag3":"Formation incluse"},"cons":{"eyebrow":"Sur-mesure","title":"Vos consignes, appliquées à la lettre","sub":"Vous gardez le contrôle : chaque agent applique vos règles précises, propres à votre activité.","c1t":"Un client demande un devis un dimanche","c1q":"Le chatbot répond et programme un rappel lundi 9h.","c2t":"Un appelant demande un prix par téléphone","c2q":"L'agent vocal donne la grille tarifaire standard, jamais de remise à l'oral.","c3t":"Un message urgent arrive hors horaires","c3q":"Transfert immédiat vers votre GSM, avec résumé du message par SMS.","c4t":"Un dossier revient trois fois sans réponse","c4q":"L'automatisation relance automatiquement le bon interlocuteur en interne."},"how":{"eyebrow":"Mise en place","title":"Trois étapes, quelques semaines","s1t":"Audit rapide","s1d":"On identifie avec vous où les contacts et le temps se perdent, et le service le plus rentable à automatiser en premier.","s2t":"Configuration","s2d":"Vos consignes, votre ton, vos outils (agenda, CRM, caisse...) sont intégrés à l'agent IA.","s3t":"Mise en prod","s3d":"L'agent est testé puis activé progressivement, avec un suivi des premières semaines."},"rep":{"eyebrow":"Avant / après","title":"Ce qu'on remplace, concrètement","b1":"Répondeur classique qui prend un message","a1":"Agent qui répond, qualifie et agit","b2":"Secrétariat externalisé, horaires limités","a2":"IA disponible 24h/24, tous les jours","b3":"Relances et suivis faits à la main","a3":"Automatisation qui déclenche les bonnes actions","b4":"Appels manqués le soir et le week-end","a4":"Prise en charge continue, sans interruption"},"price":{"eyebrow":"Tarifs","title":"Des prix clairs, affichés dès maintenant","sub":"Pas de simulateur à remplir : voici nos tarifs de départ pour chaque service.","badge":"Le plus choisi","p1t":"Répondeurs IA vocaux","p1from":"À partir de","p1v":"149 €","p1u":"/mois","p1d":"Ligne unique, FR/NL, prise de RDV, résumés d'appels par email/SMS.","p2t":"Chatbots & réponses auto","p2from":"À partir de","p2v":"1 200 €","p2u":"+ 150 €/mois","p2d":"Mise en place puis maintenance et hébergement, sur email, WhatsApp et site web.","p3t":"Développements sur mesure","p3from":"À partir de","p3v":"1 800 €","p3u":"/automatisation","p3d":"Workflows n8n, intégrations CRM/ERP. Projets complexes sur devis."},"faq":{"eyebrow":"Questions fréquentes","title":"Avant de vous lancer","q1":"Mes données sont-elles conformes au RGPD ?","a1":"Oui. Les données sont hébergées en Europe et traitées conformément au RGPD, avec un accès restreint à votre équipe et à TALOX.","q2":"Est-ce que ça remplace mon équipe ?","a2":"Non, l'objectif est de compléter votre équipe sur les créneaux et volumes qu'elle ne peut pas couvrir seule, pas de la remplacer.","q3":"Combien de temps avant la mise en place ?","a3":"Comptez quelques semaines entre l'audit initial et la mise en production, selon la complexité du projet.","q4":"Est-ce que ça fonctionne pour mon secteur ?","a4":"Nos solutions s'adaptent à la plupart des secteurs. Consultez nos pages dédiées ou contactez-nous pour un avis rapide sur votre cas.","q5":"Quel est le prix réel, tout compris ?","a5":"Nos tarifs de départ sont publiés sur la page Tarifs. Le prix final dépend du volume et des intégrations souhaitées.","q6":"Y a-t-il un engagement de durée ?","a6":"Non, nos abonnements sont sans engagement long. Les détails varient selon le service, voir la page Tarifs."},"contact":{"eyebrow":"Contact","title":"Parlons de votre projet","sub":"Décrivez votre besoin, on revient vers vous sous 24h avec une première piste concrète."},"sectors":{"eyebrow":"Secteurs","title":"Pensé pour votre métier","sub":"Chaque secteur a son vocabulaire, ses outils et ses urgences. Nos agents s'y adaptent.","d1":"Qualification des demandes et prise de rendez-vous de visite.","d2":"Prise de rendez-vous et orientation des urgences, en toute confidentialité.","d3":"Réservations et commandes à emporter, même en plein coup de feu.","d4":"Standard géré pour comptables, avocats et consultants.","d5":"Prise de devis et de rendez-vous chantier sans décrocher sur le terrain.","d6":"Suivi de commande et SAV automatisés sur vos canaux habituels."},"footerBrand":"Agence belge d'automatisation IA, basée à Bruxelles. Répondeurs vocaux, chatbots et développements sur-mesure."},"en":{"nav":{"home":"Home","services":"Services","sectors":"Industries","pricing":"Pricing","contact":"Contact","cta":"Start a project"},"footer":{"tagline":"Belgian AI automation agency, based in Brussels.","servicesTitle":"Services","sectorsTitle":"Industries","contactTitle":"Contact","formLink":"Contact form","location":"Brussels, Belgium","rights":"All rights reserved.","compliance":"GDPR · EU hosting"},"sectorNames":{"immobilier":"Real estate","sante-bien-etre":"Health & wellness","horeca-restauration":"Hospitality & restaurants","services-professionnels":"Professional services","artisans-btp":"Trades & construction","ecommerce-retail":"E-commerce & retail"},"cta":{"start":"Start a project","ask":"Ask a question","details":"See details","discover":"Discover","allPricing":"See all pricing"},"services":{"s1":"AI voice responders","s2":"Chatbots & auto-replies","s3":"Custom development"},"guarantee":{"gdpr":"GDPR & EU hosting","noCommit":"No long-term commitment","fast":"Fast set-up"},"form":{"firstName":"First name","firstNameReq":"First name *","firstNamePh":"John","lastName":"Last name","lastNameReq":"Last name *","lastNamePh":"Smith","email":"Work email","emailReq":"Work email *","emailPh":"john@company.com","company":"Company","companyPh":"Your company name","project":"Your project","projectReq":"Your project *","projectPh":"Describe your needs in a few lines...","submit":"Send my request","sending":"Sending...","error":"Something went wrong. Try again or email contact@talox.be","note":"Reply guaranteed within 24h · No commitment","success":"Message sent! We'll get back to you within 24 hours."},"breadcrumbHome":"Home","breadcrumbSectors":"Industries","demoStatus":"Online","howEyebrow":"Built for your business","howTitle":"How it works for you","usecaseEyebrow":"Use cases","usecaseTitle":"Real-world examples","guaranteeEyebrow":"Guarantees","guaranteeTitle":"Risk-free for your business","fromLabel":"From","faqEyebrow":"FAQ","faqTitlePrefix":"Specific to","hero":{"tag":"AI Agency — Brussels, Belgium","t1":"Every missed call","t2":"is a customer who goes elsewhere","sub":"TALOX deploys AI agents that answer, qualify and act on your behalf, day and night — voice responders, chatbots and custom automations.","cta1":"Start a project","cta2":"See our services","meta1":"Reply guaranteed within 24h","meta2":"No commitment","meta3":"EU hosting"},"heroDialog":[{"from":"client","text":"Hi, are you still doing quotes for an installation this month?"},{"from":"agent","text":"Hello 👋 Yes, absolutely. Can I take your details and suggest a time slot?"},{"from":"client","text":"Yes please, preferably towards the end of the week."},{"from":"agent","text":"I can offer Friday 2pm or Saturday 10am. You'll get a reminder by text the day before."},{"from":"client","text":"Friday 2pm works, thanks!"},{"from":"agent","text":"Noted ✅ Appointment confirmed, the team has been informed. Have a great day!"}],"demoNote":"Simulated demo — real example on request","demoReplay":"Replay","demoTitle":"TALOX Assistant","calc":{"eyebrow":"Simulation","title":"How much do missed contacts cost you?","sub":"A customer who calls or messages without a reply doesn't always call back. Estimate the potential loss for your business.","missedLabel":"Missed contacts per week (calls, messages)","valueLabel":"Average value of a customer","resultLabel":"Estimated monthly loss","disclaimer":"Indicative estimate for illustration, based on your own figures.","compareTemplate":"That's an estimated net loss of around €{amount} above an Essential plan starting at €149/month."},"pain":{"eyebrow":"Life without TALOX","title":"The moments your business doesn't answer","p1t":"6:47pm","p1":"A customer follows up on WhatsApp","p1d":"No one replies until tomorrow morning. They may have already written elsewhere.","p2t":"10:30pm","p2":"A missed call in the evening","p2d":"That's an appointment, sometimes a sale, lost to a competitor who answers.","p3t":"8:15am","p3":"The switchboard is jammed on Monday morning","p3d":"The whole team is in a meeting, calls pile up unanswered.","p4t":"Every week","p4":"The same task redone by hand","p4d":"A billing or follow-up process still handled manually, every week."},"adv":{"eyebrow":"Why TALOX","title":"No more ignored contacts","a1t":"Available 24/7","a1d":"Your AI agents answer in the evening, on weekends and during peak times, never overwhelmed.","a2t":"Cheaper than hiring","a2d":"A predictable monthly subscription, no payroll costs or training period.","a3t":"Deployed within weeks","a3d":"No internal development to carry: audit, configuration, then a fast go-live."},"svc":{"eyebrow":"Our services","title":"Three ways to never miss a customer again","s1t":"AI voice responders","s1d":"Intelligent voice agents that answer your incoming calls 24/7, qualify your leads and book appointments, never missing a call.","s1tag1":"Available 24/7","s1tag2":"Multilingual","s1tag3":"CRM integrated","s2t":"Chatbots & automated replies","s2d":"Chatbots trained on your business that instantly reply to your customers by email, WhatsApp or your website, and intelligently escalate complex cases.","s2tag1":"Website","s2tag2":"WhatsApp","s2tag3":"Email","s3t":"Custom development","s3d":"Every business has its own workflows. We design fully custom AI automations for your specific processes, from idea to deployment.","s3tag1":"Needs analysis","s3tag2":"API integrations","s3tag3":"Training included"},"cons":{"eyebrow":"Tailored to you","title":"Your instructions, followed to the letter","sub":"You stay in control: every agent applies your precise rules, specific to your business.","c1t":"A customer asks for a quote on a Sunday","c1q":"The chatbot replies and schedules a callback for Monday 9am.","c2t":"A caller asks for a price over the phone","c2q":"The voice agent gives the standard price list, never a discount verbally.","c3t":"An urgent message arrives outside hours","c3q":"Immediate transfer to your mobile, with a text summary of the message.","c4t":"A case comes back three times unanswered","c4q":"The automation automatically follows up with the right person internally."},"how":{"eyebrow":"Getting started","title":"Three steps, a few weeks","s1t":"Quick audit","s1d":"We identify with you where contacts and time are being lost, and the most valuable service to automate first.","s2t":"Configuration","s2d":"Your instructions, your tone, your tools (calendar, CRM, till...) are built into the AI agent.","s3t":"Go-live","s3d":"The agent is tested then activated progressively, with monitoring over the first weeks."},"rep":{"eyebrow":"Before / after","title":"What we replace, concretely","b1":"A classic answering machine that takes a message","a1":"An agent that answers, qualifies and acts","b2":"Outsourced secretarial service, limited hours","a2":"AI available 24/7, every day","b3":"Follow-ups and reminders done by hand","a3":"Automation that triggers the right actions","b4":"Missed calls in the evening and at weekends","a4":"Continuous coverage, without interruption"},"price":{"eyebrow":"Pricing","title":"Clear prices, shown right now","sub":"No form to fill in: here are our starting prices for each service.","badge":"Most popular","p1t":"AI voice responders","p1from":"From","p1v":"€149","p1u":"/month","p1d":"Single line, FR/NL, appointment booking, call summaries by email/text.","p2t":"Chatbots & auto-replies","p2from":"From","p2v":"€1,200","p2u":"+ €150/month","p2d":"Set-up, then maintenance and hosting, on email, WhatsApp and your website.","p3t":"Custom development","p3from":"From","p3v":"€1,800","p3u":"/automation","p3d":"n8n workflows, CRM/ERP integrations. Complex projects on quote."},"faq":{"eyebrow":"FAQ","title":"Before you get started","q1":"Is my data GDPR compliant?","a1":"Yes. Data is hosted in Europe and processed in line with GDPR, with restricted access limited to your team and TALOX.","q2":"Does this replace my team?","a2":"No, the goal is to complement your team on the time slots and volumes it can't cover alone, not to replace it.","q3":"How long before it's up and running?","a3":"Count a few weeks between the initial audit and going live, depending on the complexity of the project.","q4":"Does it work for my industry?","a4":"Our solutions adapt to most industries. Check our dedicated pages or contact us for a quick assessment of your case.","q5":"What's the real, all-in price?","a5":"Our starting prices are published on the Pricing page. The final price depends on volume and the integrations you want.","q6":"Is there a minimum commitment?","a6":"No, our subscriptions have no long-term commitment. Details vary by service, see the Pricing page."},"contact":{"eyebrow":"Contact","title":"Let's talk about your project","sub":"Describe your needs, we'll get back to you within 24h with a concrete first approach."},"sectors":{"eyebrow":"Industries","title":"Built for your business","sub":"Every industry has its own vocabulary, tools and urgencies. Our agents adapt to them.","d1":"Qualifying enquiries and booking viewing appointments.","d2":"Appointment booking and urgent-case routing, with full confidentiality.","d3":"Reservations and takeaway orders, even during the rush.","d4":"Managed switchboard for accountants, lawyers and consultants.","d5":"Quote requests and site visit bookings without answering on-site.","d6":"Automated order tracking and customer service on your usual channels."},"footerBrand":"Belgian AI automation agency, based in Brussels. Voice responders, chatbots and custom development."},"nl":{"nav":{"home":"Home","services":"Diensten","sectors":"Sectoren","pricing":"Tarieven","contact":"Contact","cta":"Start een project"},"footer":{"tagline":"Belgisch AI-automatiseringsbureau, gevestigd in Brussel.","servicesTitle":"Diensten","sectorsTitle":"Sectoren","contactTitle":"Contact","formLink":"Contactformulier","location":"Brussel, België","rights":"Alle rechten voorbehouden.","compliance":"AVG · Hosting in de EU"},"sectorNames":{"immobilier":"Vastgoed","sante-bien-etre":"Gezondheid & welzijn","horeca-restauration":"Horeca","services-professionnels":"Zakelijke dienstverlening","artisans-btp":"Vakmannen & bouw","ecommerce-retail":"E-commerce & retail"},"cta":{"start":"Start een project","ask":"Stel een vraag","details":"Bekijk details","discover":"Ontdekken","allPricing":"Alle tarieven bekijken"},"services":{"s1":"AI-spraakassistenten","s2":"Chatbots & auto-antwoorden","s3":"Maatwerkontwikkeling"},"guarantee":{"gdpr":"AVG & hosting in de EU","noCommit":"Geen lange verbintenis","fast":"Snelle opstart"},"form":{"firstName":"Voornaam","firstNameReq":"Voornaam *","firstNamePh":"Jan","lastName":"Naam","lastNameReq":"Naam *","lastNamePh":"Janssens","email":"Zakelijk e-mailadres","emailReq":"Zakelijk e-mailadres *","emailPh":"jan@bedrijf.be","company":"Bedrijf","companyPh":"Naam van uw bedrijf","project":"Uw project","projectReq":"Uw project *","projectPh":"Beschrijf uw behoefte in enkele zinnen...","submit":"Verstuur mijn aanvraag","sending":"Bezig met verzenden...","error":"Er is een fout opgetreden. Probeer opnieuw of mail naar contact@talox.be","note":"Reactie gegarandeerd binnen 24u · Geen verbintenis","success":"Bericht verzonden! We reageren binnen 24 uur."},"breadcrumbHome":"Home","breadcrumbSectors":"Sectoren","demoStatus":"Online","howEyebrow":"Gemaakt voor uw vak","howTitle":"Hoe het voor u werkt","usecaseEyebrow":"Praktijkvoorbeelden","usecaseTitle":"Concrete voorbeelden","guaranteeEyebrow":"Garanties","guaranteeTitle":"Risicovrij voor uw activiteit","fromLabel":"Vanaf","faqEyebrow":"Veelgestelde vragen","faqTitlePrefix":"Specifiek voor","hero":{"tag":"AI-bureau — Brussel, België","t1":"Elke gemiste oproep","t2":"is een klant die elders gaat kijken","sub":"TALOX zet AI-agenten in die namens u antwoorden, kwalificeren en handelen, dag en nacht — spraakassistenten, chatbots en maatwerkautomatisering.","cta1":"Start een project","cta2":"Bekijk onze diensten","meta1":"Reactie gegarandeerd binnen 24u","meta2":"Geen verbintenis","meta3":"Hosting in de EU"},"heroDialog":[{"from":"client","text":"Goeiedag, maakt u nog offertes voor een installatie deze maand?"},{"from":"agent","text":"Hallo 👋 Zeker. Mag ik uw gegevens noteren en een moment voorstellen?"},{"from":"client","text":"Ja graag, liefst tegen het einde van de week."},{"from":"agent","text":"Ik kan vrijdag 14u of zaterdag 10u voorstellen. U krijgt de dag voordien een sms-herinnering."},{"from":"client","text":"Vrijdag 14u is goed, bedankt!"},{"from":"agent","text":"Genoteerd ✅ Afspraak bevestigd, het team is verwittigd. Fijne dag nog!"}],"demoNote":"Gesimuleerde demo — echt voorbeeld op aanvraag","demoReplay":"Opnieuw afspelen","demoTitle":"TALOX-assistent","calc":{"eyebrow":"Simulatie","title":"Wat kosten gemiste contacten u?","sub":"Een klant die belt of schrijft zonder antwoord, belt niet altijd terug. Schat het mogelijke verlies voor uw activiteit in.","missedLabel":"Gemiste contacten per week (oproepen, berichten)","valueLabel":"Gemiddelde waarde van een klant","resultLabel":"Geschat maandelijks verlies","disclaimer":"Indicatieve schatting ter illustratie, gebaseerd op uw eigen cijfers.","compareTemplate":"Dat is een geschat netto verlies van ongeveer € {amount} bovenop een Essentieel-abonnement vanaf € 149/maand."},"pain":{"eyebrow":"Het dagelijkse leven zonder TALOX","title":"Die momenten waarop uw bedrijf niet antwoordt","p1t":"18u47","p1":"Een klant stuurt een bericht op WhatsApp","p1d":"Niemand antwoordt voor morgenvroeg. Mogelijk schrijft de klant al elders.","p2t":"22u30","p2":"Een gemiste oproep in de avond","p2d":"Dat is een afspraak, soms een verkoop, verloren aan een bereikbare concurrent.","p3t":"08u15","p3":"De telefooncentrale zit vol op maandagochtend","p3d":"Het hele team zit in vergadering, oproepen stapelen zich op zonder antwoord.","p4t":"Elke week","p4":"Dezelfde taak opnieuw met de hand gedaan","p4d":"Een facturatie- of opvolgingsproces dat nog steeds elke week manueel gebeurt."},"adv":{"eyebrow":"Waarom TALOX","title":"Geen genegeerd contact meer","a1t":"Beschikbaar 24/7","a1d":"Uw AI-agenten antwoorden 's avonds, in het weekend en tijdens piekmomenten, zonder ooit overbelast te raken.","a2t":"Goedkoper dan aanwerven","a2d":"Een voorspelbaar maandelijks abonnement, zonder sociale lasten of opleidingsperiode.","a3t":"Binnen enkele weken operationeel","a3d":"Geen interne ontwikkeling nodig: audit, configuratie en snelle livegang."},"svc":{"eyebrow":"Onze diensten","title":"Drie manieren om nooit meer een klant te missen","s1t":"AI-spraakassistenten","s1d":"Intelligente spraakagenten die uw inkomende oproepen 24/7 beantwoorden, uw leads kwalificeren en afspraken inplannen, zonder ooit een oproep te missen.","s1tag1":"Beschikbaar 24/7","s1tag2":"Meertalig","s1tag3":"CRM geïntegreerd","s2t":"Chatbots & automatische antwoorden","s2d":"Chatbots getraind op uw activiteit die uw klanten onmiddellijk antwoorden via e-mail, WhatsApp of uw website, en complexe gevallen intelligent doorschakelen.","s2tag1":"Website","s2tag2":"WhatsApp","s2tag3":"E-mail","s3t":"Maatwerkontwikkeling","s3d":"Elk bedrijf heeft zijn eigen processen. Wij ontwerpen volledig aangepaste AI-automatiseringen voor uw specifieke processen, van idee tot implementatie.","s3tag1":"Behoefteanalyse","s3tag2":"API-integraties","s3tag3":"Opleiding inbegrepen"},"cons":{"eyebrow":"Op maat","title":"Uw instructies, tot in de puntjes toegepast","sub":"U houdt de controle: elke agent past uw precieze regels toe, specifiek voor uw activiteit.","c1t":"Een klant vraagt zondag een offerte","c1q":"De chatbot antwoordt en plant een terugbelmoment op maandag 9u.","c2t":"Een beller vraagt een prijs aan de telefoon","c2q":"De spraakagent geeft de standaard prijslijst, nooit mondeling korting.","c3t":"Een dringend bericht komt buiten de uren binnen","c3q":"Onmiddellijke doorschakeling naar uw gsm, met een sms-samenvatting van het bericht.","c4t":"Een dossier komt drie keer terug zonder antwoord","c4q":"De automatisering contacteert automatisch de juiste persoon intern."},"how":{"eyebrow":"Opstart","title":"Drie stappen, enkele weken","s1t":"Snelle audit","s1d":"Samen met u brengen we in kaart waar contacten en tijd verloren gaan, en welke dienst het eerst het meest oplevert om te automatiseren.","s2t":"Configuratie","s2d":"Uw instructies, uw toon, uw tools (agenda, CRM, kassa...) worden geïntegreerd in de AI-agent.","s3t":"Livegang","s3d":"De agent wordt getest en vervolgens geleidelijk geactiveerd, met opvolging tijdens de eerste weken."},"rep":{"eyebrow":"Voor / na","title":"Wat we concreet vervangen","b1":"Klassiek antwoordapparaat dat een boodschap noteert","a1":"Agent die antwoordt, kwalificeert en handelt","b2":"Uitbesteed secretariaat, beperkte uren","a2":"AI beschikbaar 24/7, elke dag","b3":"Opvolging en herinneringen manueel gedaan","a3":"Automatisering die de juiste acties activeert","b4":"Gemiste oproepen 's avonds en in het weekend","a4":"Continue opvolging, zonder onderbreking"},"price":{"eyebrow":"Tarieven","title":"Duidelijke prijzen, nu al zichtbaar","sub":"Geen formulier in te vullen: hier zijn onze startprijzen voor elke dienst.","badge":"Meest gekozen","p1t":"AI-spraakassistenten","p1from":"Vanaf","p1v":"€ 149","p1u":"/maand","p1d":"Eén lijn, FR/NL, afspraken inplannen, oproepsamenvattingen via e-mail/sms.","p2t":"Chatbots & auto-antwoorden","p2from":"Vanaf","p2v":"€ 1.200","p2u":"+ € 150/maand","p2d":"Opstart, daarna onderhoud en hosting, op e-mail, WhatsApp en website.","p3t":"Maatwerkontwikkeling","p3from":"Vanaf","p3v":"€ 1.800","p3u":"/automatisering","p3d":"n8n-workflows, CRM/ERP-integraties. Complexe projecten op offerte."},"faq":{"eyebrow":"Veelgestelde vragen","title":"Voor u begint","q1":"Is mijn data AVG-conform?","a1":"Ja. Data wordt gehost in Europa en verwerkt conform de AVG, met beperkte toegang voor uw team en TALOX.","q2":"Vervangt dit mijn team?","a2":"Nee, het doel is om uw team aan te vullen op de momenten en volumes die het niet alleen aankan, niet om het te vervangen.","q3":"Hoelang duurt de opstart?","a3":"Reken op enkele weken tussen de eerste audit en de livegang, afhankelijk van de complexiteit van het project.","q4":"Werkt dit voor mijn sector?","a4":"Onze oplossingen passen zich aan de meeste sectoren aan. Bekijk onze specifieke pagina's of contacteer ons voor een snelle inschatting.","q5":"Wat is de echte, totale prijs?","a5":"Onze startprijzen staan op de Tarievenpagina. De uiteindelijke prijs hangt af van het volume en de gewenste integraties.","q6":"Is er een minimumverbintenis?","a6":"Nee, onze abonnementen kennen geen lange verbintenis. Details verschillen per dienst, zie de Tarievenpagina."},"contact":{"eyebrow":"Contact","title":"Praten we over uw project","sub":"Beschrijf uw behoefte, we reageren binnen 24u met een eerste concreet voorstel."},"sectors":{"eyebrow":"Sectoren","title":"Gemaakt voor uw vak","sub":"Elke sector heeft zijn eigen vocabulaire, tools en urgenties. Onze agenten passen zich hieraan aan.","d1":"Kwalificatie van aanvragen en inplannen van bezoekafspraken.","d2":"Afspraken inplannen en dringende gevallen doorschakelen, met volledige vertrouwelijkheid.","d3":"Reserveringen en afhaalbestellingen, zelfs tijdens de drukte.","d4":"Beheerd onthaal voor boekhouders, advocaten en consultants.","d5":"Offerteaanvragen en werfafspraken zonder op de werf op te nemen.","d6":"Geautomatiseerde bestelopvolging en klantendienst op uw gebruikelijke kanalen."},"footerBrand":"Belgisch AI-automatiseringsbureau, gevestigd in Brussel. Spraakassistenten, chatbots en maatwerkontwikkeling."}};
+</script>
+</body>
+</html>

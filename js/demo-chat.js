@@ -1,0 +1,103 @@
+// TALOX V2 — démo de conversation simulée (hero)
+// Lit le script depuis window.TALOX_I18N[langue].heroDialog pour suivre le sélecteur de langue.
+
+const DEMO_CONFIG = {
+  mode: 'scripted',
+  phone: { number: '', label: 'Appelez ce numéro pour tester notre agent vocal' },
+  fallbackScript: [
+    { from: 'client', text: "Bonjour, vous faites encore des devis pour une installation ce mois-ci ?" },
+    { from: 'agent', text: "Bonjour 👋 Oui, tout à fait. Je peux prendre vos coordonnées et vous proposer un créneau, ça vous va ?" },
+    { from: 'client', text: "Oui parfait, plutôt en fin de semaine si possible." },
+    { from: 'agent', text: "Je vous propose vendredi 14h ou samedi 10h. Un rappel vous sera envoyé la veille par SMS." },
+    { from: 'client', text: "Va pour vendredi 14h, merci !" },
+    { from: 'agent', text: "C'est noté ✅ Rendez-vous confirmé, l'équipe est prévenue. Bonne journée !" },
+  ],
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.querySelector('[data-demo-chat]');
+  if (!root) return;
+
+  if (DEMO_CONFIG.mode === 'phone' && DEMO_CONFIG.phone.number) {
+    renderPhoneDemo(root);
+    return;
+  }
+
+  runScriptedDemo(root);
+
+  const replayBtn = root.querySelector('[data-demo-replay]');
+  if (replayBtn) replayBtn.addEventListener('click', () => runScriptedDemo(root));
+
+  document.addEventListener('talox:langchange', () => runScriptedDemo(root));
+});
+
+function getScript() {
+  const lang = document.documentElement.lang || 'fr';
+  const dict = window.TALOX_I18N && window.TALOX_I18N[lang];
+  return (dict && Array.isArray(dict.heroDialog)) ? dict.heroDialog : DEMO_CONFIG.fallbackScript;
+}
+
+function renderPhoneDemo(root) {
+  const body = root.querySelector('[data-demo-body]');
+  if (!body) return;
+  body.innerHTML = `
+    <div style="text-align:center; padding: 2rem 0;">
+      <p style="font-family: var(--font-display); font-size:1.3rem; font-weight:700; margin-bottom:0.5rem; color:var(--text-white);">${DEMO_CONFIG.phone.number}</p>
+      <p style="color:var(--text-muted); font-size:0.9rem;">${DEMO_CONFIG.phone.label}</p>
+    </div>`;
+}
+
+let demoTimers = [];
+
+function runScriptedDemo(root) {
+  const body = root.querySelector('[data-demo-body]');
+  if (!body) return;
+
+  demoTimers.forEach(clearTimeout);
+  demoTimers = [];
+  body.innerHTML = '';
+
+  const script = getScript();
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let delay = 0;
+
+  script.forEach((line) => {
+    const typingDelay = prefersReducedMotion ? 0 : 480;
+    const showDelay = prefersReducedMotion ? 0 : 850;
+
+    if (!prefersReducedMotion) {
+      demoTimers.push(setTimeout(() => showTyping(body, line.from), delay));
+    }
+    delay += typingDelay;
+
+    demoTimers.push(setTimeout(() => {
+      removeTyping(body);
+      appendMessage(body, line.from, line.text);
+    }, delay));
+    delay += showDelay;
+  });
+}
+
+function showTyping(body, from) {
+  removeTyping(body);
+  const el = document.createElement('div');
+  el.className = 'demo-typing';
+  el.dataset.typingIndicator = 'true';
+  el.innerHTML = '<span></span><span></span><span></span>';
+  if (from === 'client') el.style.alignSelf = 'flex-end';
+  body.appendChild(el);
+  body.scrollTop = body.scrollHeight;
+}
+
+function removeTyping(body) {
+  const el = body.querySelector('[data-typing-indicator]');
+  if (el) el.remove();
+}
+
+function appendMessage(body, from, text) {
+  const el = document.createElement('div');
+  el.className = `demo-msg from-${from}`;
+  el.textContent = text;
+  body.appendChild(el);
+  body.scrollTop = body.scrollHeight;
+}
