@@ -188,6 +188,12 @@ h3, .h3 { font-size: 1.2rem; }
   color: var(--text-white); display: flex; align-items: center; gap: 0.5rem; letter-spacing: -0.01em; flex-shrink: 0;
 }
 .logo-mark { width: 9px; height: 9px; background: var(--violet); flex-shrink: 0; }
+.logo-product {
+  font-family: var(--font-display); font-weight: 600; font-size: 0.68rem;
+  letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted);
+  border: 1px solid var(--border-strong); border-radius: 5px; padding: 0.2rem 0.45rem;
+  margin-left: 0.35rem;
+}
 
 .main-nav { display: flex; align-items: center; gap: 1.75rem; min-width: 0; }
 .main-nav ul { display: flex; gap: 1.6rem; align-items: center; }
