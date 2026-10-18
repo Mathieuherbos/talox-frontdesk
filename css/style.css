@@ -482,6 +482,26 @@ section { padding: var(--space-section-top) 0 var(--space-section-bottom); posit
 .footer-grid:has(> :nth-child(2):last-child) { grid-template-columns: 1.4fr 1fr; }
 @media (max-width: 480px) { .footer-grid:has(> :nth-child(2):last-child) { grid-template-columns: 1fr; } }
 
+/* ---------- Teaser accueil vers /demo ---------- */
+.demo-teaser-card {
+  position: relative; display: block; max-width: 760px; margin: 0 auto;
+  border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border);
+  box-shadow: var(--shadow-md); background: var(--dark-card); transition: border-color 0.2s ease;
+}
+.demo-teaser-card:hover, .demo-teaser-card:focus-visible { border-color: var(--border-strong); }
+.demo-teaser-card img { width: 100%; height: auto; display: block; transition: transform 0.3s ease; }
+.demo-teaser-card:hover img { transform: scale(1.02); }
+.demo-teaser-play {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(180deg, rgba(11,10,16,0.1), rgba(11,10,16,0.55));
+}
+.demo-teaser-play::before {
+  content: ""; position: absolute; width: 78px; height: 78px; border-radius: 50%;
+  background: var(--violet); box-shadow: var(--shadow-glow); transition: background 0.15s ease;
+}
+.demo-teaser-card:hover .demo-teaser-play::before { background: #6d2fd6; }
+.demo-teaser-play .icon { position: relative; z-index: 1; width: 28px; height: 28px; color: #fff; margin-left: 4px; }
+
 /* ---------- Page /demo : hero + vidéo ---------- */
 .demo-hero { padding-bottom: clamp(2.5rem, 5vw, 3.5rem); }
 .demo-hero .hero-subtitle { max-width: 620px; margin: 0 auto 2rem; }
