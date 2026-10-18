@@ -51,9 +51,17 @@ Ne pas réintroduire le moteur `data-i18n`/`window.TALOX_I18N` sans raison : il 
 
 `demo/index.html` : vidéo + audio + transcription synchronisée d'un vrai appel traité par FrontDesk (agence fictive "Horizon Immobilier"). Assets dans `videos/demo-appel-720p.mp4` + `.vtt`, `audio/demo-appel-frontdesk.mp3`, `images/demo-appel-poster.jpg` + `preuve-*.webp`. JS dédié `js/demo.js` (lecteur audio + sync bulles), chargé uniquement sur cette page. FR uniquement pour l'instant : pas de lien `/demo` dans la nav EN/NL tant que `en/demo/index.html` et `nl/demo/index.html` n'existent pas (même logique de duplication que les autres pages, pas de clé i18n).
 
-## État temporaire : pages légales retirées de la navigation
+## État temporaire : pages légales retirées de la navigation + texte générique
 
-Les 4 pages légales (`mentions-legales.html`, `confidentialite.html`, `cookies.html`, `conditions-generales.html`) contiennent encore des `[À COMPLÉTER]` (forme juridique, numéro BCE, adresse). Elles restent sur le disque et en `noindex, nofollow`, mais ont été retirées du footer (FR/EN/NL) et de la page 404, pour que le site soit présentable à des clients avant que ces infos ne soient fournies. Seul le lien vers `confidentialite.html` dans la case de consentement RGPD du formulaire de contact a été conservé (sinon le formulaire n'a plus de base légale affichée). Dès que les infos d'entreprise réelles arrivent : compléter les 4 pages, puis remettre la colonne "Légal" dans le footer (le CSS `.footer-grid:has(...)` qui compense son absence s'annule automatiquement dès qu'elle revient).
+Les 4 pages légales (`mentions-legales.html`, `confidentialite.html`, `cookies.html`, `conditions-generales.html`, FR/EN/NL) restent sur le disque en `noindex, nofollow` et retirées du footer (FR/EN/NL) et de la page 404, pour que le site soit présentable à des clients avant que les vraies infos d'entreprise ne soient fournies. Seul le lien vers `confidentialite.html` dans la case de consentement RGPD du formulaire de contact a été conservé.
+
+Les `[À COMPLÉTER]` visibles ont été remplacés par du texte générique mais honnête (ex. "TALOX, société belge basée à Bruxelles, Belgique" au lieu de "[FORME JURIDIQUE À COMPLÉTER], numéro BCE [À COMPLÉTER]") pour que les pages ne ressemblent plus à un brouillon. Points encore génériques à revoir avec les vraies infos et idéalement un juriste avant de rendre ces pages publiques/indexables :
+- Forme juridique, numéro BCE et adresse du siège (absents partout, jamais inventés)
+- Clause de responsabilité dans les CGV (boilerplate SaaS standard rédigé par Claude, à faire valider par un juriste vu l'usage d'un système automatisé en contact direct avec les clients de nos clients)
+- Durée de conservation des données (formulée en principe général "le temps nécessaire", pas de durée chiffrée)
+- Tribunal compétent (référence au "siège social de TALOX" plutôt qu'un arrondissement nommé, tant que l'adresse réelle n'est pas fixée)
+
+Dès que les infos réelles arrivent : les intégrer dans les 4 pages, retirer `noindex`, remettre la colonne "Légal" dans le footer (le CSS `.footer-grid:has(...)` qui compense son absence s'annule automatiquement dès qu'elle revient).
 
 ## Déploiement
 

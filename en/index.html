@@ -33,7 +33,7 @@
 {"@context":"https://schema.org","@type":"Service","name":"FrontDesk","provider":{"@type":"Organization","name":"TALOX"},"areaServed":{"@type":"Country","name":"Belgium"},"serviceType":"Qualification des demandes et prise de rendez-vous pour agences immobilières"}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does FrontDesk actually do in V1?","acceptedAnswer":{"@type":"Answer","text":"Two things: qualify every incoming call (project type, budget, availability) and offer a viewing appointment based on your real availability."}},{"@type":"Question","name":"Is it suited to a small independent agency?","acceptedAnswer":{"@type":"Answer","text":"Yes, FrontDesk is built for independent agencies of 2 to 10 people, anywhere in Belgium."}},{"@type":"Question","name":"Is my data protected?","acceptedAnswer":{"@type":"Answer","text":"Your calls are processed by ElevenLabs (voice processing, a US-based company), then orchestrated by n8n, hosted on our own Hostinger server. You stay in control: only the information needed for qualification and booking is processed."}},{"@type":"Question","name":"Is there a minimum commitment?","acceptedAnswer":{"@type":"Answer","text":"No, FrontDesk runs on a one-month notice period, with no long-term commitment."}},{"@type":"Question","name":"Will my customers know they're talking to an assistant?","acceptedAnswer":{"@type":"Answer","text":"Yes, FrontDesk introduces itself as your agency's virtual assistant from the start of the call."}},{"@type":"Question","name":"What happens when FrontDesk doesn't know how to answer?","acceptedAnswer":{"@type":"Answer","text":"It passes the request on to you rather than improvising an answer."}},{"@type":"Question","name":"Which channels and tools does it work with?","acceptedAnswer":{"@type":"Answer","text":"FrontDesk handles your phone calls. It works with Google Calendar (tested and confirmed); your needs (other calendar, other tools) are assessed before set-up."}},{"@type":"Question","name":"How long does set-up take?","acceptedAnswer":{"@type":"Answer","text":"A few days."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does FrontDesk actually do in V1?","acceptedAnswer":{"@type":"Answer","text":"Two things: qualify every incoming call (project type, budget, availability) and offer a viewing appointment based on your real availability."}},{"@type":"Question","name":"Is it suited to a small independent agency?","acceptedAnswer":{"@type":"Answer","text":"Yes, FrontDesk is built for independent agencies of 2 to 10 people, anywhere in Belgium."}},{"@type":"Question","name":"Is my data protected?","acceptedAnswer":{"@type":"Answer","text":"Your calls are processed by ElevenLabs (voice processing, a US-based company), then orchestrated by n8n, hosted on our own Hostinger server. You stay in control: only the information needed for qualification and booking is processed."}},{"@type":"Question","name":"Is there a minimum commitment?","acceptedAnswer":{"@type":"Answer","text":"No, FrontDesk runs on a one-month notice period, with no long-term commitment."}},{"@type":"Question","name":"What happens if I go over my included minutes?","acceptedAnswer":{"@type":"Answer","text":"Nothing stops: FrontDesk keeps answering, and each minute beyond your plan is billed at €0.25 excl. VAT. We warn you before you reach the limit."}},{"@type":"Question","name":"Will my customers know they're talking to an assistant?","acceptedAnswer":{"@type":"Answer","text":"Yes, FrontDesk introduces itself as your agency's virtual assistant from the start of the call."}},{"@type":"Question","name":"What happens when FrontDesk doesn't know how to answer?","acceptedAnswer":{"@type":"Answer","text":"It passes the request on to you rather than improvising an answer."}},{"@type":"Question","name":"Which channels and tools does it work with?","acceptedAnswer":{"@type":"Answer","text":"FrontDesk handles your phone calls. It works with Google Calendar (tested and confirmed); your needs (other calendar, other tools) are assessed before set-up."}},{"@type":"Question","name":"How long does set-up take?","acceptedAnswer":{"@type":"Answer","text":"A few days."}}]}
 </script>
 </head>
 <body>
@@ -257,18 +257,49 @@
     <div class="container">
       <div class="section-intro centered">
         <span class="eyebrow">Pricing</span>
-        <h2>One simple price</h2>
-        <p>No tier to pick, FrontDesk V1 does two things and does them well.</p>
+        <h2>Clear pricing, no surprises</h2>
+        <p>FrontDesk is installed and configured for your agency. You don't touch a thing, your calls are handled from the first week.</p>
       </div>
-      <div class="card pricing-card featured" style="max-width:420px; margin:0 auto;">
-        <p class="price-value">€149 <small>/month</small></p>
-        <ul class="price-features">
-          <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Automatic qualification of incoming enquiries</li>
-          <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Appointment booking synced to your calendar</li>
-          <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Custom set-up for your agency</li>
-        </ul>
-        <a href="#contact" class="btn btn-primary btn-block">Request a demo</a>
-        <p class="price-note" style="margin-top:1rem;">A single extra mandate or sale can cover several months of subscription.</p>
+      <div class="grid grid-2" style="max-width:860px; margin:0 auto; align-items:stretch;">
+        <div class="card pricing-card">
+          <p class="price-value">€349 <small>excl. VAT /month</small></p>
+          <p class="text-muted" style="margin-bottom:1.25rem;">For the independent agency that doesn't want to miss another call</p>
+          <ul class="price-features">
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Phone reception in French, 24/7</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Qualification of sellers, buyers and tenants</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Appointment booking in your calendar</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Summary of every call by email</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>SMS confirmation to the caller and SMS alert for urgent cases</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>600 call minutes included per month (around 200 calls)</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">Request a demo</a>
+        </div>
+        <div class="card pricing-card featured">
+          <span class="pricing-badge">Most complete</span>
+          <p class="price-value">€549 <small>excl. VAT /month</small></p>
+          <p class="text-muted" style="margin-bottom:1.25rem;">For the agency that wants a real front desk</p>
+          <ul class="price-features">
+            <li style="font-weight:600; color:var(--text-white);"><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Everything in Essentiel, plus:</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Live call transfer to the agent on duty</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Reception in French, Dutch and English</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>One calendar per agent, with automatic routing</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>FrontDesk answers on your listed properties, from your property file</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>1,500 call minutes included per month (around 500 calls)</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">Request a demo</a>
+        </div>
+      </div>
+
+      <div style="max-width:620px; margin:2rem auto 0; text-align:center;">
+        <div class="guarantee-row centered" style="margin-bottom:1rem;">
+          <span class="guarantee-pill"><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Launch offer: setup free for the first 3 agencies</span>
+        </div>
+        <p class="text-muted" style="font-size:0.9rem;">Setup: €490 excl. VAT, one-off (configuration, dedicated number, testing).</p>
+        <p class="text-muted" style="font-size:0.9rem; margin-top:0.5rem;">Extra minute beyond the plan: €0.25 excl. VAT. No long-term commitment, one-month notice.</p>
+      </div>
+
+      <div class="pricing-custom-bar" style="max-width:860px; margin:2rem auto 0; justify-content:center; text-align:center; border-style:solid;">
+        <p style="max-width:640px;">A single recovered mandate pays for FrontDesk for nearly two years: a sale at €300,000 brings in around €9,000 in commission, while FrontDesk Essentiel costs €4,678 excl. VAT in its first year.</p>
       </div>
     </div>
   </section>
@@ -295,6 +326,10 @@
         <details class="faq-item">
           <summary class="faq-question"><span>Is there a minimum commitment?</span><span class="faq-toggle-icon"><svg class="icon icon-plus" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg><svg class="icon icon-minus" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></svg></span></summary>
           <p class="faq-answer">No, FrontDesk runs on a one-month notice period, with no long-term commitment.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question"><span>What happens if I go over my included minutes?</span><span class="faq-toggle-icon"><svg class="icon icon-plus" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg><svg class="icon icon-minus" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></svg></span></summary>
+          <p class="faq-answer">Nothing stops: FrontDesk keeps answering, and each minute beyond your plan is billed at €0.25 excl. VAT. We warn you before you reach the limit.</p>
         </details>
         <details class="faq-item">
           <summary class="faq-question"><span>Will my customers know they're talking to an assistant?</span><span class="faq-toggle-icon"><svg class="icon icon-plus" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg><svg class="icon icon-minus" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></svg></span></summary>

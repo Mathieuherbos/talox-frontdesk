@@ -33,7 +33,7 @@
 {"@context":"https://schema.org","@type":"Service","name":"FrontDesk","provider":{"@type":"Organization","name":"TALOX"},"areaServed":{"@type":"Country","name":"Belgium"},"serviceType":"Qualification des demandes et prise de rendez-vous pour agences immobilières"}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Que fait FrontDesk exactement en V1 ?","acceptedAnswer":{"@type":"Answer","text":"Deux choses : qualifier chaque appel entrant (type de projet, budget, disponibilité) et proposer un rendez-vous de visite selon vos disponibilités réelles."}},{"@type":"Question","name":"Est-ce adapté à une petite agence indépendante ?","acceptedAnswer":{"@type":"Answer","text":"Oui, FrontDesk est pensé pour les agences indépendantes de 2 à 10 personnes, partout en Belgique."}},{"@type":"Question","name":"Mes données sont-elles protégées ?","acceptedAnswer":{"@type":"Answer","text":"Vos appels sont traités par ElevenLabs (traitement vocal, société basée aux États-Unis), puis orchestrés par n8n, hébergé sur notre propre serveur Hostinger. Vous gardez le contrôle : seules les informations nécessaires à la qualification et à la prise de rendez-vous sont traitées."}},{"@type":"Question","name":"Y a-t-il un engagement de durée ?","acceptedAnswer":{"@type":"Answer","text":"Non, FrontDesk fonctionne avec un préavis d'un mois, sans engagement de longue durée."}},{"@type":"Question","name":"Mes clients sauront-ils qu'ils parlent à un assistant ?","acceptedAnswer":{"@type":"Answer","text":"Oui, FrontDesk se présente comme l'assistant virtuel de votre agence dès le début de l'appel."}},{"@type":"Question","name":"Que se passe-t-il quand FrontDesk ne sait pas répondre ?","acceptedAnswer":{"@type":"Answer","text":"Il vous transmet la demande plutôt que d'improviser une réponse."}},{"@type":"Question","name":"Avec quels canaux et quels outils ça fonctionne ?","acceptedAnswer":{"@type":"Answer","text":"FrontDesk gère vos appels téléphoniques. Il fonctionne avec Google Agenda (testé et confirmé) ; vos besoins (autre agenda, autres outils) sont étudiés avant la mise en place."}},{"@type":"Question","name":"Combien de temps dure la mise en place ?","acceptedAnswer":{"@type":"Answer","text":"Quelques jours."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Que fait FrontDesk exactement en V1 ?","acceptedAnswer":{"@type":"Answer","text":"Deux choses : qualifier chaque appel entrant (type de projet, budget, disponibilité) et proposer un rendez-vous de visite selon vos disponibilités réelles."}},{"@type":"Question","name":"Est-ce adapté à une petite agence indépendante ?","acceptedAnswer":{"@type":"Answer","text":"Oui, FrontDesk est pensé pour les agences indépendantes de 2 à 10 personnes, partout en Belgique."}},{"@type":"Question","name":"Mes données sont-elles protégées ?","acceptedAnswer":{"@type":"Answer","text":"Vos appels sont traités par ElevenLabs (traitement vocal, société basée aux États-Unis), puis orchestrés par n8n, hébergé sur notre propre serveur Hostinger. Vous gardez le contrôle : seules les informations nécessaires à la qualification et à la prise de rendez-vous sont traitées."}},{"@type":"Question","name":"Y a-t-il un engagement de durée ?","acceptedAnswer":{"@type":"Answer","text":"Non, FrontDesk fonctionne avec un préavis d'un mois, sans engagement de longue durée."}},{"@type":"Question","name":"Que se passe-t-il si je dépasse mes minutes ?","acceptedAnswer":{"@type":"Answer","text":"Rien ne s'arrête : FrontDesk continue de répondre, et chaque minute au-delà du forfait est facturée 0,25 € HTVA. On vous prévient avant d'atteindre la limite."}},{"@type":"Question","name":"Mes clients sauront-ils qu'ils parlent à un assistant ?","acceptedAnswer":{"@type":"Answer","text":"Oui, FrontDesk se présente comme l'assistant virtuel de votre agence dès le début de l'appel."}},{"@type":"Question","name":"Que se passe-t-il quand FrontDesk ne sait pas répondre ?","acceptedAnswer":{"@type":"Answer","text":"Il vous transmet la demande plutôt que d'improviser une réponse."}},{"@type":"Question","name":"Avec quels canaux et quels outils ça fonctionne ?","acceptedAnswer":{"@type":"Answer","text":"FrontDesk gère vos appels téléphoniques. Il fonctionne avec Google Agenda (testé et confirmé) ; vos besoins (autre agenda, autres outils) sont étudiés avant la mise en place."}},{"@type":"Question","name":"Combien de temps dure la mise en place ?","acceptedAnswer":{"@type":"Answer","text":"Quelques jours."}}]}
 </script>
 </head>
 <body>
@@ -237,18 +237,49 @@
     <div class="container">
       <div class="section-intro centered">
         <span class="eyebrow">Tarif</span>
-        <h2>Un prix simple</h2>
-        <p>Pas de palier à choisir, FrontDesk V1 fait deux choses et les fait bien.</p>
+        <h2>Un prix clair, sans surprise</h2>
+        <p>FrontDesk est installé et configuré pour votre agence. Vous ne touchez à rien, vos appels sont pris en charge dès la première semaine.</p>
       </div>
-      <div class="card pricing-card featured" style="max-width:420px; margin:0 auto;">
-        <p class="price-value">149 € <small>/mois</small></p>
-        <ul class="price-features">
-          <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Qualification automatique des demandes entrantes</li>
-          <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Prise de rendez-vous synchronisée à votre agenda</li>
-          <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Configuration sur-mesure pour votre agence</li>
-        </ul>
-        <a href="#contact" class="btn btn-primary btn-block">Demander une démo</a>
-        <p class="price-note" style="margin-top:1rem;">Un seul mandat ou une seule vente en plus peut couvrir plusieurs mois d'abonnement.</p>
+      <div class="grid grid-2" style="max-width:860px; margin:0 auto; align-items:stretch;">
+        <div class="card pricing-card">
+          <p class="price-value">349 € <small>HTVA /mois</small></p>
+          <p class="text-muted" style="margin-bottom:1.25rem;">Pour l'agence indépendante qui ne veut plus rater d'appel</p>
+          <ul class="price-features">
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Accueil téléphonique en français, 24 h/24 et 7 j/7</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Qualification des vendeurs, acheteurs et locataires</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Prise de rendez-vous dans votre agenda</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Récapitulatif de chaque appel par e-mail</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>SMS de confirmation à l'appelant et alerte SMS en cas d'urgence</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>600 minutes d'appel incluses par mois (environ 200 appels)</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">Demander une démo</a>
+        </div>
+        <div class="card pricing-card featured">
+          <span class="pricing-badge">Le plus complet</span>
+          <p class="price-value">549 € <small>HTVA /mois</small></p>
+          <p class="text-muted" style="margin-bottom:1.25rem;">Pour l'agence qui veut un vrai standard</p>
+          <ul class="price-features">
+            <li style="font-weight:600; color:var(--text-white);"><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Tout l'Essentiel, plus :</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Transfert d'appel en direct vers l'agent de garde</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Accueil en français, néerlandais et anglais</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Un agenda par agent, avec routage automatique</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>FrontDesk répond sur vos biens à partir de votre fichier de biens</li>
+            <li><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>1 500 minutes d'appel incluses par mois (environ 500 appels)</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">Demander une démo</a>
+        </div>
+      </div>
+
+      <div style="max-width:620px; margin:2rem auto 0; text-align:center;">
+        <div class="guarantee-row centered" style="margin-bottom:1rem;">
+          <span class="guarantee-pill"><svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Offre de lancement : mise en place offerte aux 3 premières agences</span>
+        </div>
+        <p class="text-muted" style="font-size:0.9rem;">Mise en place : 490 € HTVA, une seule fois (configuration, numéro dédié, tests).</p>
+        <p class="text-muted" style="font-size:0.9rem; margin-top:0.5rem;">Minute supplémentaire au-delà du forfait : 0,25 € HTVA. Sans engagement de durée, préavis d'un mois.</p>
+      </div>
+
+      <div class="pricing-custom-bar" style="max-width:860px; margin:2rem auto 0; justify-content:center; text-align:center; border-style:solid;">
+        <p style="max-width:640px;">Un seul mandat récupéré paie FrontDesk pendant près de deux ans&nbsp;: une vente à 300 000&nbsp;€ rapporte environ 9 000&nbsp;€ de commission, FrontDesk Essentiel coûte 4 678&nbsp;€ HTVA la première année.</p>
       </div>
     </div>
   </section>
@@ -275,6 +306,10 @@
         <details class="faq-item">
           <summary class="faq-question"><span>Y a-t-il un engagement de durée ?</span><span class="faq-toggle-icon"><svg class="icon icon-plus" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg><svg class="icon icon-minus" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></svg></span></summary>
           <p class="faq-answer">Non, FrontDesk fonctionne avec un préavis d'un mois, sans engagement de longue durée.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question"><span>Que se passe-t-il si je dépasse mes minutes ?</span><span class="faq-toggle-icon"><svg class="icon icon-plus" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg><svg class="icon icon-minus" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></svg></span></summary>
+          <p class="faq-answer">Rien ne s'arrête : FrontDesk continue de répondre, et chaque minute au-delà du forfait est facturée 0,25 € HTVA. On vous prévient avant d'atteindre la limite.</p>
         </details>
         <details class="faq-item">
           <summary class="faq-question"><span>Mes clients sauront-ils qu'ils parlent à un assistant ?</span><span class="faq-toggle-icon"><svg class="icon icon-plus" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg><svg class="icon icon-minus" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></svg></span></summary>
