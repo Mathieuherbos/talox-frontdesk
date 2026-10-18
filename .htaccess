@@ -7,4 +7,7 @@ ErrorDocument 404 /404.html
   ExpiresByType image/jpeg "access plus 1 month"
   ExpiresByType image/svg+xml "access plus 1 month"
   ExpiresByType video/mp4 "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType audio/mpeg "access plus 1 month"
+  ExpiresByType text/vtt "access plus 1 month"
 </IfModule>

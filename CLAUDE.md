@@ -47,6 +47,14 @@ Ne pas réintroduire le moteur `data-i18n`/`window.TALOX_I18N` sans raison : il 
 - Promesses chiffrées non confirmées
 - Données d'entreprise réelles tant qu'elles ne sont pas fournies (Talox n'est pas encore constituée juridiquement)
 
+## Page /demo (démo d'appel réel)
+
+`demo/index.html` : vidéo + audio + transcription synchronisée d'un vrai appel traité par FrontDesk (agence fictive "Horizon Immobilier"). Assets dans `videos/demo-appel-720p.mp4` + `.vtt`, `audio/demo-appel-frontdesk.mp3`, `images/demo-appel-poster.jpg` + `preuve-*.webp`. JS dédié `js/demo.js` (lecteur audio + sync bulles), chargé uniquement sur cette page. FR uniquement pour l'instant : pas de lien `/demo` dans la nav EN/NL tant que `en/demo/index.html` et `nl/demo/index.html` n'existent pas (même logique de duplication que les autres pages, pas de clé i18n).
+
+## État temporaire : pages légales retirées de la navigation
+
+Les 4 pages légales (`mentions-legales.html`, `confidentialite.html`, `cookies.html`, `conditions-generales.html`) contiennent encore des `[À COMPLÉTER]` (forme juridique, numéro BCE, adresse). Elles restent sur le disque et en `noindex, nofollow`, mais ont été retirées du footer (FR/EN/NL) et de la page 404, pour que le site soit présentable à des clients avant que ces infos ne soient fournies. Seul le lien vers `confidentialite.html` dans la case de consentement RGPD du formulaire de contact a été conservé (sinon le formulaire n'a plus de base légale affichée). Dès que les infos d'entreprise réelles arrivent : compléter les 4 pages, puis remettre la colonne "Légal" dans le footer (le CSS `.footer-grid:has(...)` qui compense son absence s'annule automatiquement dès qu'elle revient).
+
 ## Déploiement
 
 Dépôt privé. Ne jamais passer en public sans accord explicite. Aperçu via GitHub Pages (nécessite un dépôt public pour l'hébergement gratuit — à ARRÊTER et redemander confirmation avant de changer la visibilité). Aucun DNS touché, aucune publication sur le domaine de production sans validation explicite.
